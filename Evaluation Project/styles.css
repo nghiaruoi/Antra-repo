@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.game-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-top: 20px;
+  max-width: 600px; /* Limit width of controls to match game container */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.middle-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#start-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#start-button:hover {
+  background-color: #45a049;
+}
+
+.score {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.timer {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(4, 120px); /* Smaller blocks */
+  grid-template-rows: repeat(3, 120px); /* Smaller blocks */
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  max-width: 600px; /* Half screen width */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hole {
+  width: 120px; /* Smaller blocks */
+  height: 120px; /* Smaller blocks */
+  background-color: #8B4513;
+  border-radius: 50%;
+  border: 2px solid brown;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.mole {
+  width: 100px; /* Smaller moles */
+  height: 100px; /* Smaller moles */
+  background-color: #654321;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -100px;
+  left: 10px;
+  transition: bottom 0.3s ease;
+  background-image: url('mole.jpeg'); /* Add mole image */
+  background-size: cover;
+}
+
+.mole.up {
+  bottom: 10px;
+}
