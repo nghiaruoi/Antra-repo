@@ -1,0 +1,12 @@
+{
+  "name": "js-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Assignment.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node assignment.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
